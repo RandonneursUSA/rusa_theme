@@ -1,0 +1,160 @@
+<div class="page nid-{{node.id}}">
+  <a name="Top" id="Top"></a>
+  <header id="header" class="header" role="header">
+    <div class="container top">
+      {{ page.header }}
+    </div>
+  </header>
+
+  {% if main_menu or secondary_menu %}
+  <nav id="navigation" class="navigation" role="navigation">
+    <div class="container">
+      {{ main_menu }}
+      {{ secondary_menu }}
+    </div>
+  </nav>
+  {% endif %}
+
+  {% if page.main_menu %}
+  <nav id="main-menu" class="navbar navbar-default" role="navigation">
+  	<div class="collapse navbar-collapse" id="main-menu-inner">
+      <div class="container">
+        {{ page.main_menu }}
+      </div>
+    </div>
+  </nav>
+  {% endif %}
+
+  {% if page.slideshow %}
+  <section id="slideshow" class="slideshow">
+    <div class="container">
+      {{ page.slideshow }}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.featured %}
+  <section id="featured" class="featured">
+    <div class="container">
+      {{ page.featured }}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if messages %}
+  <section id="messages" class="messages">
+    <div class="container">
+      {{ messages }}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.help %}
+  <section id="help" class="help">
+    <div class="container">
+      {{ page.help }}
+    </div>
+  </section>
+  {% endif %}
+
+  <section id="main" class="main" role="main">
+    <a id="main-content"></a>
+    <div class="container">
+      <div class="row">
+
+        {% if page.sidebar_first %}
+        <aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+        {% endif %}
+
+        <div class="content col-lg-9 col-md-9  col-sm-12 col-xs-12">
+          {{ page.highlighted }}
+
+          {{ title_prefix }}
+          {% if title %}
+          <h1>{{ title }}</h1>
+          {% endif %}
+          {{ title_suffix }}
+
+          {{ tabs }}
+
+          {% if action_links %}
+          <nav class="action-links">{{ action_links }}</nav>
+          {% endif %}
+
+          {{ page.content }}
+
+          <!--{{ feed_icons }}-->
+        </div>
+
+        {% if page.sidebar_second %}
+        <aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  {% if page.panel_first_1 %}
+  <section id="panel_first" class="panel_first">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          {{ page.panel_first_1 }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.panel_second_1 or page.panel_second_2 or page.panel_second_3 or page.panel_second_4 %}
+  <section id="panel_second" class="panel_second">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_1 }}
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_2 }}
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_3 }}
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          {{ page.panel_second_4 }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if breadcrumb %}
+  <section id="breadcrumb" class="breadcrumb">
+    <div class="container">
+      {{ breadcrumb }}
+    </div>
+  </section>
+  {% endif %}
+  <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>
+
+  {% if page.footer %}
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer">
+	  <a href="/report-issue">Contact us</a> with any questions, comments, or problem reports.<br>
+	  © Copyright {{ "now"|date("Y") }}, Randonneurs USA, except as noted otherwise.
+    </div>
+  </footer>
+  {% endif %}
+
+
+  <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-51765480-1', 'auto');
+	ga('send', 'pageview');
+  </script>
+</div>

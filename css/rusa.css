@@ -1,0 +1,262 @@
+/* RUSA Theme Style
+ * Last Modified: 1/30/2021 - PL
+ *
+ */
+
+html {
+	min-width: 320px;
+}
+
+body {
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url("../images/bg00.jpg");
+}
+
+.header .container {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.region-header {
+	padding: 0;
+}
+
+
+#header .block-system-branding-block {
+  float: none !important;
+  margin-top: 1rem;
+}
+
+
+.site-title h1 {
+  font-size: 6rem;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+
+
+.nid-1 .page-title {
+	display: none;
+}
+
+
+#main > .container {
+	min-height: 400px;
+}
+
+.rusa-faq dt {
+	font-weight: bold;
+	color: #EC0000;
+	padding-top: 1em;
+}
+
+.page #main-menu .menu-item.force-show {
+	background-color: #a01300 !important;
+	background: -webkit-gradient(linear,0% 0%,0% 100%,from(#a01300),to(#282a2c)) !important;
+	background: -webkit-linear-gradient(top,#c01700,#a01300) !important;
+	background: -moz-linear-gradient(top,#c01700,#a01300) !important;
+	background: -ms-linear-gradient(top,#c01700,#a01300) !important;
+	background: -o-linear-gradient(top,#c01700,#a01300) !important;
+}
+
+.page #main-menu .menu-item.force-show>.menu {
+	display: inherit !important;
+}
+
+.container.top {
+	background: rgba(255, 255, 255, 0.76);
+}
+
+#footer .container.footer a, #footer .container.footer a:hover, #footer .container.footer a:visited {
+	color: #79D1FF;
+}
+
+.container.footer {
+	color: #ddd;
+	padding: 10px;
+	border-radius: 5px;
+	background: #3d3d3d;
+	background: -moz-linear-gradient(top,  #3d3d3d 0%, #0d0d0d 98%);
+	background: -webkit-linear-gradient(top,  #3d3d3d 0%,#0d0d0d 98%);
+	background: linear-gradient(to bottom,  #3d3d3d 0%,#0d0d0d 98%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#0d0d0d',GradientType=0 );
+}
+
+#main-menu .container ul.menu li:first-child > a {
+	border-bottom-right-radius: 0 !important;
+}
+
+#main-menu .container, #main-menu .container ul.menu li:first-child > a {
+  border-top-left-radius:  0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.intro {
+	padding: .5em 2em 2em 2em;
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+a, a:link, a:visited {
+	color: #0088ce;
+}
+
+.block-views-blockannouncements-block-1 table td {
+	padding: 5px;
+}
+
+.block-views-blockannouncements-block-1 table td:first-child {
+	font-weight: bold;
+	font-size: smaller;
+}
+
+
+
+.home-page {
+	margin-bottom: 3em;
+}
+
+.home-page .video-wrapper iframe {
+	width: 100%;
+	height: 317px;
+}
+
+.views-element-container.block {
+	padding-bottom: 3em;
+}
+
+
+.grand-brevet-block .views-col {
+  padding: 0 1em;
+}
+
+.grand-brevet-block .views-field-field-image {
+  text-align: center;
+}
+
+.grand-brevet-block .views-field-field-date {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+td, 
+th {
+  padding: 5px;
+}
+
+#main .container .content .home-page,
+#main .container .content .node--type-home-page {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.block-views-blockannouncements-block-1 > h2 {
+  margin-top: -20px;
+}
+
+.node__content .book-navigation,
+.book-printer {
+  display: none !important;
+}
+
+
+/* Date display in announcements */
+
+.block-views-blockannouncements-block-1 table {
+  border-collapse: separate;
+  border-spacing: 0px 5px;
+}
+
+.block-views-blockannouncements-block-1 .views-field-created {
+  font-size: 90% !important;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+.brevet-weeks th,
+.brevet-weeks td {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+/* User account Menu */
+#block-useraccountmenu {
+  float: right;
+  margin: 0 1rem;
+  position: relative;
+  z-index: 500;
+}
+
+#block-useraccountmenu .menu {
+  min-height: 60px;
+  padding: 0 .4em;
+}
+
+#block-useraccountmenu .menu-item a {
+  color: #c01700;
+  font-size: 110%;
+}
+.rusa-view .vbo-table,
+.rusa-view .vbo-table tr,
+.rusa-view .vbo-table th,
+.rusa-view .vbo-table td {
+   border: 1px solid #aaa;
+   padding: 0 .5rem;
+}
+
+.rusa-view .vbo-table td .form-item .form-actions {
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+/* Follow us icons */
+#block-socialmedia {
+    float: right;
+    margin-top: -60px;
+    margin-right: 1.2rem;
+    position: relative;
+}
+
+
+#block-socialmedia .contextual {
+    display: none !important;
+}
+
+/* Media Queries overrides */
+
+@media all and (max-width: 800px) {
+  .site-logo img {
+/*    max-width: 80px; */
+  }
+
+  .site-title h1 {
+    display: block;
+    font-size: 12pt;
+    margin-top: 0;
+    white-space: nowrap;
+  }
+
+  #block-socialmedia img {
+    max-width: 30px;
+  }
+
+  .navbar-toggle {
+    display: block;  
+    top: -4rem;
+    width: 40px;
+  }
+
+}
+
+

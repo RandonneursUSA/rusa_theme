@@ -1,0 +1,262 @@
+1,7c1,40
+< <div class="page nid-{{node.id}}">
+<   <a name="Top" id="Top"></a>
+<   <header id="header" class="header" role="header">
+<     <div class="container top">
+<       {{ page.header }}
+<     </div>
+<   </header>
+---
+> <div class="page">
+> <a name="Top" id="Top"></a>
+> <header id="header" class="header" role="header">
+>   <div class="container">
+>     {% if logo %}
+>       <a id="logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+>         <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+>       </a>
+>     {% endif %}
+> 
+>     {% if site_name or site_slogan %}
+>       <div class="name-and-slogan">
+> 
+>         {# Use h1 when the content title is empty #}
+>         {% if title %}
+>           <strong class="site-name">
+>             <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+>           </strong>
+>         {% else %}
+>           <h1 class="site-name">
+>             <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+>           </h1>
+>         {% endif %}
+> 
+>         {% if site_slogan %}
+>           <div class="site-slogan">{{ site_slogan }}</div>
+>         {% endif %}
+>       </div>
+>    {% endif %}
+>    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu-inner">
+>       <span class="sr-only">Toggle navigation</span>
+>       <span class="icon-bar"></span>
+>       <span class="icon-bar"></span>
+>       <span class="icon-bar"></span>
+>     </button>
+> 
+>     {{ page.header }}
+>     
+>   </div>
+> </header>
+10,15c43,48
+<   <nav id="navigation" class="navigation" role="navigation">
+<     <div class="container">
+<       {{ main_menu }}
+<       {{ secondary_menu }}
+<     </div>
+<   </nav>
+---
+>     <nav id="navigation" class="navigation" role="navigation">
+>       <div class="container">
+>         {{ main_menu }}
+>         {{ secondary_menu }}
+>       </div>
+>     </nav>
+19,25c52,58
+<   <nav id="main-menu" class="navbar navbar-default" role="navigation">
+<   	<div class="collapse navbar-collapse" id="main-menu-inner">
+<       <div class="container">
+<         {{ page.main_menu }}
+<       </div>
+<     </div>
+<   </nav>
+---
+>     <nav id="main-menu" class="navbar navbar-default" role="navigation">	
+>   		  <div class="collapse navbar-collapse" id="main-menu-inner">
+>           <div class="container">
+>             {{ page.main_menu }}						
+>           </div>
+>         </div>
+>     </nav>
+29,33c62,66
+<   <section id="slideshow" class="slideshow">
+<     <div class="container">
+<       {{ page.slideshow }}
+<     </div>
+<   </section>
+---
+>     <section id="slideshow" class="slideshow">
+>       <div class="container">
+>         {{ page.slideshow }}
+>       </div>
+>     </section>
+37,41c70,74
+<   <section id="featured" class="featured">
+<     <div class="container">
+<       {{ page.featured }}
+<     </div>
+<   </section>
+---
+>     <section id="featured" class="featured">
+>       <div class="container">
+>         {{ page.featured }}
+>       </div>
+>     </section>
+45,49c78,82
+<   <section id="messages" class="messages">
+<     <div class="container">
+<       {{ messages }}
+<     </div>
+<   </section>
+---
+>     <section id="messages" class="messages">
+>       <div class="container">
+>         {{ messages }}
+>       </div>
+>     </section>
+53,58c86,91
+<   <section id="help" class="help">
+<     <div class="container">
+<       {{ page.help }}
+<     </div>
+<   </section>
+<   {% endif %}
+---
+>     <section id="help" class="help">
+>       <div class="container">
+>         {{ page.help }}
+>       </div>
+>     </section>
+>   {% endif %}    
+64c97
+< 
+---
+>         
+66,68c99,101
+<         <aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+<           {{ page.sidebar_first }}
+<         </aside>
+---
+>           <aside class="sidebar-first sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+>             {{ page.sidebar_first }}
+>           </aside>
+70c103
+< 
+---
+> 		
+76c109
+<           <h1>{{ title }}</h1>
+---
+>             <h1>{{ title }}</h1>
+83c116
+<           <nav class="action-links">{{ action_links }}</nav>
+---
+>             <nav class="action-links">{{ action_links }}</nav>
+92,94c125,127
+<         <aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+<           {{ page.sidebar_second }}
+<         </aside>
+---
+>           <aside class="sidebar-second sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12" role="complementary">
+>             {{ page.sidebar_second }}
+>           </aside>
+101,105c134,139
+<   <section id="panel_first" class="panel_first">
+<     <div class="container">
+<       <div class="row">
+<         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<           {{ page.panel_first_1 }}
+---
+>     <section id="panel_first" class="panel_first">
+>       <div class="container">
+>         <div class="row">
+>           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+>             {{ page.panel_first_1 }}
+>           </div>
+108,109c142
+<     </div>
+<   </section>
+---
+>     </section>
+111c144
+< 
+---
+>     
+113,126c146,160
+<   <section id="panel_second" class="panel_second">
+<     <div class="container">
+<       <div class="row">
+<         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<           {{ page.panel_second_1 }}
+<         </div>
+<         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<           {{ page.panel_second_2 }}
+<         </div>
+<         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<           {{ page.panel_second_3 }}
+<         </div>
+<         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<           {{ page.panel_second_4 }}
+---
+>     <section id="panel_second" class="panel_second">
+>       <div class="container">
+>         <div class="row">
+>           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+>             {{ page.panel_second_1 }}
+>           </div>
+>           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+>             {{ page.panel_second_2 }}
+>           </div>
+>           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+>             {{ page.panel_second_3 }}
+>           </div>
+>           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+>             {{ page.panel_second_4 }}
+>           </div>
+129,130c163
+<     </div>
+<   </section>
+---
+>     </section>
+132c165
+< 
+---
+>   
+134,138c167,171
+<   <section id="breadcrumb" class="breadcrumb">
+<     <div class="container">
+<       {{ breadcrumb }}
+<     </div>
+<   </section>
+---
+>     <section id="breadcrumb" class="breadcrumb">
+>       <div class="container">
+>         {{ breadcrumb }}
+>       </div>
+>     </section>
+140c173
+<   <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>
+---
+>   <a href="#Top" class="btn-btt" title="Back to Top" style="display: block;"></a>          
+143,148c176,180
+<   <footer id="footer" class="footer" role="contentinfo">
+<     <div class="container footer">
+< 	  <a href="/report-issue">Contact us</a> with any questions, comments, or problem reports.<br>
+< 	  © Copyright {{ "now"|date("Y") }}, Randonneurs USA, except as noted otherwise.
+<     </div>
+<   </footer>
+---
+>     <footer id="footer" class="footer" role="contentinfo">
+>       <div class="container">
+>         {{ page.footer }}
+>       </div>
+>     </footer>
+151,159d182
+< 
+<   <script>
+< 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+< 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+< 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+< 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+< 	ga('create', 'UA-51765480-1', 'auto');
+< 	ga('send', 'pageview');
+<   </script>
