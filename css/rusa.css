@@ -191,19 +191,19 @@ th {
 }
 
 /* User account Menu */
-#block-useraccountmenu {
+#block-rusa-theme-useraccountmenu {
   float: right;
   margin: 0 1rem;
   position: relative;
   z-index: 500;
 }
 
-#block-useraccountmenu .menu {
+#block-rusa-theme-useraccountmenu .menu {
   min-height: 60px;
   padding: 0 .4em;
 }
 
-#block-useraccountmenu .menu-item a {
+#block-rusa-theme-useraccountmenu .menu-item a {
   color: #c01700;
   font-size: 110%;
 }
@@ -221,7 +221,7 @@ th {
 }
 
 /* Follow us icons */
-#block-socialmedia {
+#block-rusa-theme-socialmedia {
     float: right;
     margin-top: -60px;
     margin-right: 1.2rem;
@@ -229,7 +229,7 @@ th {
 }
 
 
-#block-socialmedia .contextual {
+#block-rusa-theme-socialmedia .contextual {
     display: none !important;
 }
 
