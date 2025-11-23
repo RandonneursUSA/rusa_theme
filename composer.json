@@ -1,0 +1,6 @@
+{
+  "name": "rusa/rusa_theme",
+  "type": "drupal-custom-theme",
+  "license": "GPL-2.0-or-later",
+  "description": "Drupal theme for RUSA"
+}
